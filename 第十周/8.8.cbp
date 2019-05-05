@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    unsigned int values [5]= {2,4,6,8,10};
+
+    unsigned int *vPtr count;
+
+    for(size_t i=0; i<values.size(); i++)
+    {
+        cout << values[i];
+    }
+
+    unsigned int *vPtr = &values[0];
+    vPtr = values;
+
+    for (size_t j=0; j<values.size(); j++)
+    {
+        cout << *(vPtr+j);
+    }
+
+    for (size_t k=0; j<values.size(); j++)
+    {
+        cout << *(values+k);
+    }
+
+    for (size_t m=0;m<values.size();m++)
+    {
+        cout << vPtr[m];
+    }
+
+    values[4];
+    *( values+4 );
+    vPtr[4];
+    *( vPtr+4 );
+
+    1002500+3*8=1002524
+
+    values[4]=102500+4*8=102532
+    Ö´ÐÐnPtr-=4ºó£¬1002500-4*8=1002468£»
+
+
+
+}
